@@ -9,15 +9,16 @@ export const ContactLinks = () => {
           viewBox='0 0 24 24'
           fill='none'
           stroke='white'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         >
           <path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path>
           <polyline points='22,6 12,13 2,6'></polyline>
         </svg>
         <a
-          href='mailto://salonioswal22@gmail.com'
+          href='mailto:salonioswal22@gmail.com'
+          target='_blank'
           className='caret-transparent block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
         >
           salonioswal22@gmail.com
@@ -32,10 +33,10 @@ export const ContactLinks = () => {
           fill='none'
           role='img'
           aria-labelledby='a2o4kyc9m5rcuzaszsnmvbrzqctomxql'
-          class='octicon'
+          className='octicon'
         >
           <title id='a2o4kyc9m5rcuzaszsnmvbrzqctomxql'>LinkedIn</title>
-          <g clip-path='url(#clip0_202_91845)'>
+          <g clipPath='url(#clip0_202_91845)'>
             <path
               d='M14.5455 0H1.45455C0.650909 0 0 0.650909 0 1.45455V14.5455C0 15.3491 0.650909 16 1.45455 16H14.5455C15.3491 16 16 15.3491 16 14.5455V1.45455C16 0.650909 15.3491 0 14.5455 0ZM5.05746 13.0909H2.912V6.18764H5.05746V13.0909ZM3.96291 5.20073C3.27127 5.20073 2.712 4.64 2.712 3.94982C2.712 3.25964 3.272 2.69964 3.96291 2.69964C4.65236 2.69964 5.21309 3.26036 5.21309 3.94982C5.21309 4.64 4.65236 5.20073 3.96291 5.20073ZM13.0938 13.0909H10.9498V9.73382C10.9498 8.93309 10.9353 7.90327 9.83491 7.90327C8.71855 7.90327 8.54691 8.77527 8.54691 9.67564V13.0909H6.40291V6.18764H8.46109V7.13091H8.49018C8.77673 6.58836 9.47636 6.016 10.52 6.016C12.6924 6.016 13.0938 7.44582 13.0938 9.30473V13.0909V13.0909Z'
               fill='currentColor'
@@ -44,6 +45,7 @@ export const ContactLinks = () => {
         </svg>
         <a
           href='https://www.linkedin.com/in/salonioswal/'
+          target='_blank'
           className='caret-transparent block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
         >
           LinkedIn
@@ -63,6 +65,7 @@ export const ContactLinks = () => {
         </svg>
         <a
           href='https://github.com/Saloni-Oswal/'
+          target='_blank'
           className='caret-transparent block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
         >
           Github
@@ -74,20 +77,21 @@ export const ContactLinks = () => {
           viewBox='0 0 64 64'
           fill='none'
           stroke='currentColor'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
           aria-hidden='true'
           height='16'
           widht='16'
         >
           <path
             d='M3.06 41.732L32 60.932l28.94-19.2V22.268L32 3.068l-28.94 19.2zm57.878 0L32 22.268 3.06 41.732m0-19.463L32 41.47l28.94-19.2M32 3.068v19.2m0 19.463v19.2'
-            stroke-width='5'
+            strokeWidth='5'
           ></path>
         </svg>
         <a
           href='https://codepen.io/Saloni-Oswal'
+          target='_blank'
           className='caret-transparent block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
         >
           Codepen

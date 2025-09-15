@@ -1,6 +1,6 @@
 export const ProfileImage = () => {
   return (
-    <p className='text-[14.4px] caret-transparent leading-[25.6px] break-words pt-0 pb-[15px] px-0 md:p-[25px]'>
+    <p className='text-base caret-transparent leading-[25.6px] break-words pt-0 pb-[15px] px-0 md:p-[25px]'>
       <img
         src='src/assets/profile.png'
         alt='Logo'
