@@ -4,8 +4,6 @@ import { Overlay } from "@/components/Overlay";
 import { MainContent } from "@/sections/MainContent";
 
 const changeRadialGradient = function (event) {
-  console.log(`Event Loaded ${event}`);
-
   const gradientDiv = document.querySelector(".radial-gradient");
   gradientDiv.style.background =
     "radial-gradient(600px at " +
