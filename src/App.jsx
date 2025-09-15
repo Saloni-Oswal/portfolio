@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Overlay } from "@/components/Overlay";
+import { MainContent } from "@/sections/MainContent";
+
+const changeRadialGradient = function (event) {
+  console.log(`Event Loaded ${event}`);
+
+  const gradientDiv = document.querySelector(".radial-gradient");
+  gradientDiv.style.background =
+    "radial-gradient(600px at " +
+    event.pageX +
+    "px " +
+    event.pageY +
+    "px, rgba(29, 78, 216, 0.15), transparent 80%";
+};
+
+const App = () => {
+  useEffect(() => {
+    window.addEventListener("mousemove", changeRadialGradient, false);
+    return () => {
+      window.removeEventListener("mousemove", changeRadialGradient);
+    };
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className='relative text-slate-200 text-sm not-italic normal-nums font-normal accent-auto bg-slate-900 caret-transparent flex basis-[0%] flex-col grow tracking-[normal] leading-[21px] list-outside list-disc break-words text-start indent-[0px] normal-case visible border-separate font-noto_sans'>
+      <Overlay />
+      <MainContent />
+    </div>
+  );
+};
 
-export default App
+export default App;
