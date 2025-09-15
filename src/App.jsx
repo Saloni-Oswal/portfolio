@@ -22,7 +22,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='relative text-slate-200 text-sm not-italic normal-nums font-normal accent-auto bg-slate-900 caret-transparent flex basis-[0%] flex-col grow tracking-[normal] leading-[21px] list-outside list-disc break-words text-start indent-[0px] normal-case visible border-separate font-noto_sans'>
+    <div className='relative text-slate-200 text-sm not-italic normal-nums font-normal accent-auto bg-slate-900  flex basis-[0%] flex-col grow tracking-[normal] leading-[21px] list-outside list-disc break-words text-start indent-[0px] normal-case visible border-separate font-noto_sans'>
       <Overlay />
       <MainContent />
     </div>

@@ -1,6 +1,6 @@
 export const Background = () => {
   return (
-    <section className='caret-transparent float-none break-words w-full mb-5 md:float-right md:mb-[60px]'>
+    <section className='float-none break-words w-full mb-5 md:float-right md:mb-[60px]'>
       <h1 className='text-2xl bg-teal-900 leading-[21.12px] break-words -ml-2.5 mb-5 p-2.5 rounded-[15px]'>
         Background
       </h1>

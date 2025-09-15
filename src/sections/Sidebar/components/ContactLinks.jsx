@@ -1,7 +1,7 @@
 export const ContactLinks = () => {
   return (
-    <div className='caret-transparent flex flex-col break-words'>
-      <div className='items-center caret-transparent flex break-words py-1'>
+    <div className='flex flex-col break-words'>
+      <div className='items-center flex break-words py-1'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='16'
@@ -19,12 +19,12 @@ export const ContactLinks = () => {
         <a
           href='mailto:salonioswal22@gmail.com'
           target='_blank'
-          className='caret-transparent block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
+          className='block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
         >
           salonioswal22@gmail.com
         </a>
       </div>
-      <div className='items-center caret-transparent flex break-words py-1'>
+      <div className='items-center flex break-words py-1'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='16'
@@ -46,12 +46,12 @@ export const ContactLinks = () => {
         <a
           href='https://www.linkedin.com/in/salonioswal/'
           target='_blank'
-          className='caret-transparent block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
+          className='block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
         >
           LinkedIn
         </a>
       </div>
-      <div className='items-center caret-transparent flex break-words py-1'>
+      <div className='items-center flex break-words py-1'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 16 16'
@@ -66,12 +66,12 @@ export const ContactLinks = () => {
         <a
           href='https://github.com/Saloni-Oswal/'
           target='_blank'
-          className='caret-transparent block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
+          className='block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
         >
           Github
         </a>
       </div>
-      <div className='items-center caret-transparent flex break-words py-1'>
+      <div className='items-center flex break-words py-1'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 64 64'
@@ -92,7 +92,7 @@ export const ContactLinks = () => {
         <a
           href='https://codepen.io/Saloni-Oswal'
           target='_blank'
-          className='caret-transparent block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
+          className='block break-words pl-2 hover:text-slate-50 hover:border-slate-50'
         >
           Codepen
         </a>
