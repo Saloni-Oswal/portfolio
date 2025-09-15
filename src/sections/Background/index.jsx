@@ -4,7 +4,7 @@ export const Background = () => {
       <h1 className='text-2xl bg-teal-900 leading-[21.12px] break-words -ml-2.5 mb-5 p-2.5 rounded-[15px]'>
         Background
       </h1>
-      <div className='break-words rounded-[15px] text-slate-400 text-base hover:bg-[rgba(45,212,191,0.1)]  hover:text-[#e2e8f0] leading-[25.6px]'>
+      <div className='break-words rounded-[15px] text-slate-400 text-base transition-all duration-400 hover:bg-[rgba(45,212,191,0.1)]  hover:text-[#e2e8f0] leading-[25.6px]'>
         <p className='pt-0 pb-[15px] px-0 md:p-[25px]'>
           In 2016, fresh off completing my Master&#39;s in Computer Science, I
           embarked on a journey to explore web development by creating a custom

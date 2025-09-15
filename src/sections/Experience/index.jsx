@@ -1,21 +1,22 @@
 export const Experience = () => {
   return (
     <section className='caret-transparent float-none break-words w-full mb-5 md:float-right md:mb-[60px]'>
-      <h1 className='text-[19.2px] bg-teal-900 caret-transparent leading-[21.12px] break-words -ml-2.5 mb-5 p-2.5 rounded-[15px]'>
+      <h1 className='text-2xl bg-teal-900 caret-transparent leading-[21.12px] break-words -ml-2.5 mb-5 p-2.5 rounded-[15px]'>
         Experience
       </h1>
       <dl className='caret-transparent break-words'>
         <dt className='text-base caret-transparent leading-6 break-words mb-[5px]'>
-          Senior Associate - Technology,{" "}
+          {`Senior Associate - Technology, `}
           <a
             href='https://www.synechron.com/'
+            target='_blank'
             className='caret-transparent break-words hover:text-slate-50 hover:border-slate-50'
           >
             Synechron, Pune India
           </a>
           (Jun&#39;19 - Nov&#39;22)
         </dt>
-        <dd className='text-slate-400 text-[14.4px] caret-transparent leading-[25.6px] break-words'>
+        <dd className='text-slate-400 text-base caret-transparent leading-[25.6px] break-words'>
           <dl className='caret-transparent break-words'>
             <div className='caret-transparent break-words mt-[15px] mb-[45px] p-[5px] rounded-[15px] md:mb-[25px] md:p-[25px]'>
               <dt className='text-slate-200 text-base caret-transparent break-words mb-[5px]'>
@@ -96,16 +97,17 @@ export const Experience = () => {
         </dd>
         <hr className='text-zinc-500 bg-teal-300 caret-transparent h-px break-words my-5' />
         <dt className='text-base caret-transparent leading-6 break-words mb-[5px]'>
-          Software Engineer,{" "}
+          {`Software Engineer, `}
           <a
-            href='https://springct.net/'
+            href='https://springct.com/'
+            target='_blank'
             className='caret-transparent break-words hover:text-slate-50 hover:border-slate-50'
           >
             Spring Computing Technologies, Pune, India
           </a>
           (Jan&#39;16 - May&#39;19)
         </dt>
-        <dd className='text-slate-400 text-[14.4px] caret-transparent leading-[25.6px] break-words'>
+        <dd className='text-slate-400 text-base caret-transparent leading-[25.6px] break-words'>
           <dl className='caret-transparent break-words'>
             <div className='caret-transparent break-words mt-[15px] mb-[45px] p-[5px] rounded-[15px] md:mb-[25px] md:p-[25px]'>
               <dt className='text-slate-200 text-base caret-transparent break-words mb-[5px]'>
