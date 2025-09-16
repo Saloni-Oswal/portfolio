@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./", // Set the base URL for path resolution
+    "paths": {
+      "@/components/*": ["src/components/*"], // Alias for components
+      "@/sections/*": ["src/sections/*"] // Alias for sections
+    }
+  }
+}
