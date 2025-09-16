@@ -1,3 +1,5 @@
+import { SectionTitle } from "@/sections/SectionTitle";
+
 const EXPERIENCE = [
   {
     title: "Senior Associate - Technology",
@@ -88,9 +90,7 @@ const EXPERIENCE = [
 export const Experience = () => {
   return (
     <section className='float-none break-words w-full mb-5 md:float-right md:mb-[60px]'>
-      <h1 className='text-2xl bg-teal-900 leading-[21.12px] -ml-2.5 mb-5 p-2.5 rounded-[15px]'>
-        Experience
-      </h1>
+      <SectionTitle title={"Experience"}></SectionTitle>
       <dl>
         {EXPERIENCE.map((company, index) => {
           const {
@@ -102,8 +102,8 @@ export const Experience = () => {
             projects,
           } = company;
           return (
-            <>
-              <dt key={index} className='text-base leading-6 mb-[5px]'>
+            <div key={index}>
+              <dt className='text-sm md:text-base leading-6 mb-[5px]'>
                 {`${title}, `}
                 <a
                   href={(company_link && "https://www.synechron.com/") || "#"}
@@ -113,7 +113,7 @@ export const Experience = () => {
                 </a>
                 {`(${duration})`}
               </dt>
-              <dd className='text-slate-400 text-base leading-[25.6px]'>
+              <dd className='text-slate-400 text-sm md:text-base leading-[25.6px]'>
                 <dl>
                   {projects.map((project, index) => {
                     const {
@@ -122,15 +122,20 @@ export const Experience = () => {
                       project_details,
                     } = project;
                     return (
-                      <div className='group mt-[15px] mb-[45px] p-[5px] rounded-[15px] md:mb-[25px] md:p-[25px] transition-all duration-400 hover:bg-[rgba(45,212,191,0.1)]'>
-                        <dt className='text-slate-200 text-base mb-[5px] group-hover:text-teal-300 transition-all duration-400'>
+                      <div
+                        key={index}
+                        className='group mt-[15px] mb-[45px] p-[5px] rounded-[15px] md:mb-[25px] md:p-[25px] transition-all duration-400 hover:bg-[rgba(45,212,191,0.1)]'
+                      >
+                        <dt className='text-slate-200 text-sm md:text-base mb-[5px] group-hover:text-teal-300 transition-all duration-400'>
                           {`${index + 1}. ${project_name}`}
                         </dt>
                         <dd>
                           {project_description}
                           <ul className='text-slate-200 mt-2.5 pl-0.5 md:pl-[17px] list-disc'>
-                            {project_details.map((detail) => (
-                              <li className='text-left'>{detail}</li>
+                            {project_details.map((detail, index) => (
+                              <li key={index} className='text-left'>
+                                {detail}
+                              </li>
                             ))}
                           </ul>
                         </dd>
@@ -141,7 +146,7 @@ export const Experience = () => {
                 <span className='text-slate-200 '>{company_highlight}</span>
               </dd>
               <hr className='text-teal-300 h-px my-5' />
-            </>
+            </div>
           );
         })}
       </dl>

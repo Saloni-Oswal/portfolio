@@ -3,7 +3,7 @@ import { Main } from "@/sections/Main";
 
 export const ContentWrapper = () => {
   return (
-    <div className='flex flex-row'>
+    <div className='flex flex-col md:flex-row'>
       <Sidebar />
       <Main />
     </div>
