@@ -2,6 +2,11 @@ import { SectionTitle } from "@/sections/SectionTitle";
 
 const EXPERIENCE = [
   {
+    title: "Recent work and Freelancing",
+    company_highlight:
+      "During my career gap, I freelanced on projects ranging from React Native prototypes to small-scale React dashboards, keeping pace with modern tooling (Vite, TailwindCSS, TypeScript).",
+  },
+  {
     title: "Senior Associate - Technology",
     company_name: "Synechron, Pune India",
     company_link: "https://www.synechron.com/",
@@ -39,7 +44,7 @@ const EXPERIENCE = [
     company_link: "https://springct.com/",
     duration: "Jan'16 - May'19",
     company_highlight:
-      "During my 3.5-year tenure with Spring, I actively engaged in stakeholder meetings and collaborated on scope and design discussions. I played a pivotal role in decision-making processes, aiding in the selection of optimal design patterns and architectures for various projects. Additionally, I assumed leadership responsibilities within development teams and made significant contributions to the development of Minimum Viable Products (MVPs) aimed at prospective clients, as well as worked independently to develop POCs.",
+      "During my 3.5-year tenure with Spring, I actively engaged in stakeholder meetings and collaborated on scope and design discussions. I played a pivotal role in decision-making processes, aiding in the selection of optimal design patterns and architectures for various projects. Additionally, I assumed leadership responsibilities within development teams and made significant contributions to the development of several Minimum Viable Products (MVPs) aimed at prospective clients, as well as worked independently to develop POCs.",
     projects: [
       {
         project_name: "Cross platform mobile application for Mobetize, Canada",
@@ -103,49 +108,51 @@ export const Experience = () => {
           } = company;
           return (
             <div key={index}>
-              <dt className='text-sm md:text-base leading-6 mb-[5px]'>
-                {`${title}, `}
-                <a
-                  href={(company_link && "https://www.synechron.com/") || "#"}
-                  target='_blank'
-                >
+              <dt className='text-base md:text-xl leading-6 mb-[5px]'>
+                {`${title}${company_name ? `, ` : ""}`}
+                <a href={company_link || "#"} target='_blank'>
                   {company_name}
                 </a>
-                {`(${duration})`}
+                {duration && `(${duration})`}
               </dt>
               <dd className='text-slate-400 text-sm md:text-base leading-[25.6px]'>
                 <dl>
-                  {projects.map((project, index) => {
-                    const {
-                      project_name,
-                      project_description,
-                      project_details,
-                    } = project;
-                    return (
-                      <div
-                        key={index}
-                        className='group mt-[15px] mb-[45px] p-[5px] rounded-[15px] md:mb-[25px] md:p-[25px] transition-all duration-400 hover:bg-[rgba(45,212,191,0.1)]'
-                      >
-                        <dt className='text-slate-200 text-sm md:text-base mb-[5px] group-hover:text-teal-300 transition-all duration-400'>
-                          {`${index + 1}. ${project_name}`}
-                        </dt>
-                        <dd>
-                          {project_description}
-                          <ul className='text-slate-200 mt-2.5 pl-0.5 md:pl-[17px] list-disc'>
-                            {project_details.map((detail, index) => (
-                              <li key={index} className='text-left'>
-                                {detail}
-                              </li>
-                            ))}
-                          </ul>
-                        </dd>
-                      </div>
-                    );
-                  })}
+                  {projects &&
+                    projects.map((project, index) => {
+                      const {
+                        project_name,
+                        project_description,
+                        project_details,
+                      } = project;
+                      return (
+                        <div
+                          key={index}
+                          className='group p-[5px] rounded-[15px] md:p-[25px] transition-all duration-400 hover:bg-[rgba(45,212,191,0.1)]'
+                        >
+                          <dt className='text-slate-200 text-sm md:text-base mb-[5px] group-hover:text-teal-300 transition-all duration-400'>
+                            {`${index + 1}. ${project_name}`}
+                          </dt>
+                          <dd>
+                            {project_description}
+                            <ul className='text-slate-200 mt-2.5 pl-0.5 md:pl-[17px] list-disc'>
+                              {project_details.map((detail, index) => (
+                                <li key={index} className='text-left'>
+                                  {detail}
+                                </li>
+                              ))}
+                            </ul>
+                          </dd>
+                        </div>
+                      );
+                    })}
                 </dl>
-                <span className='text-slate-200 '>{company_highlight}</span>
+                <span className='text-slate-200 mt-[15px] inline-block'>
+                  {company_highlight}
+                </span>
               </dd>
-              <hr className='text-teal-300 h-px my-5' />
+              {EXPERIENCE.length - 1 > index && (
+                <hr className='text-teal-300 h-px my-[15px] md:my-10' />
+              )}
             </div>
           );
         })}
