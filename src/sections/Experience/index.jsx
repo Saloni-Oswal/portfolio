@@ -4,7 +4,7 @@ const EXPERIENCE = [
   {
     title: "Recent work and Freelancing",
     company_highlight:
-      "During my career gap, I freelanced on projects ranging from React Native prototypes to small-scale React dashboards, keeping pace with modern tooling (Vite, TailwindCSS, TypeScript).",
+      "Currently, I am freelancing on projects ranging from React Native prototypes to small-scale React dashboards, keeping pace with modern tooling (Vite, TailwindCSS, TypeScript).",
   },
   {
     title: "Senior Associate - Technology",
