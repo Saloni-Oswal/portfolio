@@ -584,8 +584,8 @@ section {
   position: absolute;
   left: -1.65rem;
   top: 1.8rem;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: var(--rust);
   border: 2px solid var(--cream);
@@ -604,13 +604,13 @@ section {
 }
 .exp-role {
   font-family: "Playfair Display", serif;
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.2;
 }
 .exp-date {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.9rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--rust);
@@ -619,18 +619,18 @@ section {
 }
 .exp-company {
   font-family: "DM Mono", monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  font-size: 0.92rem;
+  letter-spacing: 0.05em;
   color: var(--warm-mid);
   margin-bottom: 1.2rem;
 }
 .exp-project {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--rust);
-  margin: 0.8rem 0 0.4rem;
+  margin: 0.8rem 0;
   opacity: 0.8;
 }
 .exp-bullets {
@@ -640,8 +640,8 @@ section {
   gap: 0.5rem;
 }
 .exp-bullets li {
-  font-size: 0.9rem;
-  line-height: 1.65;
+  font-size: 1.1rem;
+  line-height: 1.4;
   color: var(--warm-mid);
   display: flex;
   align-items: flex-start;
@@ -816,7 +816,7 @@ section {
 }
 .tag {
   font-family: "DM Mono", monospace;
-  font-size: 0.58rem;
+  font-size: 0.68rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink);
