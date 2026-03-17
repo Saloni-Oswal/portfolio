@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saloni Oswal - Frontend Engineer</title>
+    <meta
+      name="description"
+      content="Saloni Oswal - Frontend Engineer with 6+ years building accessible, scalable web and mobile applications in React, Redux, and React Native."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMUExNDEwIi8+PHRleHQgeD0iMTYiIHk9IjIyIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zdHlsZT0iaXRhbGljIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjQjU1MTFGIj5TTzwvdGV4dD48L3N2Zz4="
+    />
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMUExNDEwIi8+PHRleHQgeD0iMTYiIHk9IjIyIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zdHlsZT0iaXRhbGljIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjQjU1MTFGIj5TTzwvdGV4dD48L3N2Zz4="
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+    <nav id="nav" aria-label="Primary navigation">
+      <a href="#" class="nav-logo">Saloni Oswal</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Switch to dark mode"
+      >
+        <span class="icon-moon" aria-hidden="true">&#127769;</span>
+        <span class="icon-sun" aria-hidden="true">&#9728;</span>
+      </button>
+    </nav>
+
+    <main id="main-content">
+      <!-- HERO -->
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-left">
+          <p class="hero-tag">Frontend Engineer &middot; Jersey City, NJ</p>
+          <h1 class="hero-name">Saloni<br /><em>Oswal</em></h1>
+          <p class="hero-bio">
+            Frontend Engineer with 6+ years building scalable, accessible web
+            and mobile applications &mdash; specializing in React, Redux, and
+            React Native across banking, e-commerce, and enterprise. Known for
+            98% WCAG compliance and reusable design systems that accelerate
+            teams.
+          </p>
+          <div class="hero-badges">
+            <span class="hero-badge">React &amp; React Native</span>
+            <span class="hero-badge">98% WCAG Compliance</span>
+            <span class="hero-badge">Available Now</span>
+          </div>
+          <div class="hero-cta">
+            <a href="#experience" class="btn-primary">View Experience</a>
+            <a
+              href="mailto&#58;salonioswal22&#64;gmail&#46;com"
+              class="btn-outline"
+              >Say Hello</a
+            >
+          </div>
+          <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll</span>
+          </div>
+        </div>
+        <div class="hero-right" aria-hidden="true">
+          <!-- <div class="hero-pattern"></div> -->
+          <!-- <div class="hero-initials">SO</div> -->
+          <div class="hero-avatar-wrap">
+            <img
+              src="./profile_image.png"
+              alt="Saloni Oswal"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <!-- <div class="hero-location">Jersey City &middot; NJ</div> -->
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section
+        id="about"
+        aria-label="About Saloni"
+        style="background: var(--paper)"
+      >
+        <div class="section-label">01 / About</div>
+        <div class="about-grid">
+          <div>
+            <h2 class="about-headline reveal">
+              Building web experiences that are <strong>beautiful</strong> and
+              built to last.
+            </h2>
+            <p class="about-text reveal">
+              Frontend Engineer with 6+ years specializing in React, Redux, and
+              React Native. My passion lives at the intersection of design and
+              engineering &mdash; crafting software that not only looks great
+              but is accessible, performant, and maintainable. I&rsquo;m proud
+              to have achieved 98% WCAG/ADA accessibility compliance and built
+              reusable design systems that cut developer onboarding time by 30%.
+            </p>
+            <p class="about-text reveal">
+              After a planned career break in December 2022, I stayed proactive
+              &mdash; freelancing, upskilling in React, and keeping pace with
+              industry trends. I&rsquo;m now actively re-entering the workforce,
+              eager to contribute to a fast-paced team building impactful user
+              experiences.
+            </p>
+            <p class="about-text reveal">
+              Currently exploring AI-powered frontends and modern static site
+              generators like Astro and Jekyll. Open to collaborating on
+              projects that push the boundaries of what accessible, well-crafted
+              UI can do.
+            </p>
+            <div class="about-fun reveal">
+              <div class="about-fun-title">&#9889; A little about me</div>
+              <p class="about-fun-text">
+                She/Her &middot; I prefer savory meals to sweet treats, love
+                popcorn, board games, and chatting with older people.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="stats-grid reveal">
+              <div class="stat-box">
+                <div class="stat-num">6+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">98%</div>
+                <div class="stat-label">WCAG Compliance</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">5+</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">&#8734;</div>
+                <div class="stat-label">Curiosity</div>
+              </div>
+            </div>
+            <div class="contact-bits reveal">
+              <a
+                href="mailto&#58;salonioswal22&#64;gmail&#46;com"
+                class="contact-bit"
+              >
+                <span class="contact-bit-icon" aria-hidden="true">&#9993;</span>
+                salonioswal22&#64;gmail.com
+              </a>
+              <a
+                href="tel:+16466441078"
+                class="contact-bit"
+                aria-label="Phone number"
+              >
+                <span class="contact-bit-icon" aria-hidden="true"
+                  >&#128222;</span
+                >
+                (646) 644-1078
+              </a>
+              <a
+                href="https://www.linkedin.com/in/salonioswal/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile (opens in new tab)"
+                class="contact-bit"
+              >
+                <span class="contact-bit-icon" aria-hidden="true">in</span>
+                linkedin.com/in/salonioswal
+              </a>
+              <a
+                href="https://github.com/Saloni-Oswal"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile (opens in new tab)"
+                class="contact-bit"
+              >
+                <span class="contact-bit-icon" aria-hidden="true">gh</span>
+                github.com/Saloni-Oswal
+              </a>
+              <a
+                href="https://codepen.io/Saloni-Oswal"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="CodePen profile (opens in new tab)"
+                class="contact-bit"
+              >
+                <span class="contact-bit-icon" aria-hidden="true">cp</span>
+                codepen.io/Saloni-Oswal
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" aria-label="Professional Experience">
+        <div class="section-label">02 / Experience</div>
+        <div class="exp-timeline">
+          <article
+            class="exp-card reveal"
+            aria-label="Freelance Consultant role"
+          >
+            <div class="exp-header">
+              <h3 class="exp-role">Freelance Consultant</h3>
+              <span class="exp-date">Jan 2024 &mdash; Present</span>
+            </div>
+            <div class="exp-company">Independent &middot; Remote</div>
+            <ul class="exp-bullets">
+              <li>
+                Rebuilt front-end for a retail client, resulting in a 30%
+                increase in mobile conversion rates.
+              </li>
+              <li>
+                Building modular, responsive websites using React, TailwindCSS,
+                and Vite, with a focus on clean architecture and performance.
+              </li>
+              <li>
+                Collaborating with clients to translate business requirements
+                into intuitive, scalable UI solutions.
+              </li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">React</span
+              ><span class="tag">TailwindCSS</span> <span class="tag">Vite</span
+              ><span class="tag">Performance</span>
+            </div>
+          </article>
+
+          <article
+            class="exp-card reveal"
+            aria-label="Senior Associate Technology at Synechron for HSBC"
+          >
+            <div class="exp-header">
+              <h3 class="exp-role">Senior Associate, Technology</h3>
+              <span class="exp-date">Jun 2019 &mdash; Nov 2022</span>
+            </div>
+            <div class="exp-company">
+              Synechron (Client: HSBC) &middot; On-site
+            </div>
+            <div class="exp-project">Commercial Banking Web Application</div>
+            <ul class="exp-bullets">
+              <li>
+                Built modular, reusable React components and improved developer
+                onboarding time by 30% through Storybook documentation.
+              </li>
+              <li>
+                Created and maintained unit tests (Jest), reducing regression
+                issues by 30% and improving code reliability.
+              </li>
+              <li>
+                Participated in Agile ceremonies, driving sprint alignment,
+                backlog refinement, and cross-team knowledge sharing.
+              </li>
+            </ul>
+            <div class="exp-project">
+              Alias Management System &mdash; Banking Operations (HK, SG, MY)
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Enhanced a mission-critical operations system using React,
+                Redux, hooks, context, and REST APIs.
+              </li>
+              <li>
+                Achieved 98% accessibility (WCAG/ADA) by refactoring UI,
+                improving keyboard navigation, and screen-reader compatibility.
+              </li>
+              <li>
+                Modernized codebase for responsive design and cross-browser
+                compatibility using Flexbox and best-practice CSS patterns.
+              </li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">React</span><span class="tag">Redux</span>
+              <span class="tag">Jest</span><span class="tag">Storybook</span>
+              <span class="tag">WCAG</span><span class="tag">REST APIs</span>
+            </div>
+          </article>
+
+          <article
+            class="exp-card reveal"
+            aria-label="Software Engineer at Spring Computing Technologies"
+          >
+            <div class="exp-header">
+              <h3 class="exp-role">Software Engineer</h3>
+              <span class="exp-date">Jan 2016 &mdash; May 2019</span>
+            </div>
+            <div class="exp-company">
+              Spring Computing Technologies &middot; On-site
+            </div>
+            <div class="exp-project">E-Commerce Web Application</div>
+            <ul class="exp-bullets">
+              <li>
+                Developed a responsive React + Redux e-commerce platform
+                supporting secure transactions, product search, and dynamic
+                filtering.
+              </li>
+              <li>
+                Integrated Tealium analytics, improving business insights and
+                enabling data-driven decision-making.
+              </li>
+              <li>
+                Reduced post-release bugs by 25% through collaborative testing
+                cycles with UX and QA teams.
+              </li>
+            </ul>
+            <div class="exp-project">
+              Cross-platform Mobile Application (React Native)
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Built a remittance app for iOS and Android, integrating REST
+                APIs and implementing internationalization (i18n).
+              </li>
+              <li>
+                Created reusable utilities to standardize API consumption,
+                improving maintainability and reducing duplication.
+              </li>
+              <li>
+                Designed a white-labelling architecture enabling locale-specific
+                rebranding for global markets.
+              </li>
+            </ul>
+            <div class="exp-project">
+              WebRTC E-Learning Platform &mdash; Accessibility
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Enhanced accessibility by implementing customizable caption
+                styles using vanilla JavaScript and BaconJS for hearing-impaired
+                users.
+              </li>
+              <li>
+                Used CSS and LESS for dynamic font, color, and background
+                updates to support personalization needs.
+              </li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">React</span><span class="tag">Redux</span>
+              <span class="tag">React Native</span
+              ><span class="tag">i18n</span> <span class="tag">LESS</span
+              ><span class="tag">jQuery</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section
+        id="skills"
+        class="skills-section"
+        aria-label="Skills and Technologies"
+      >
+        <div class="section-label">03 / Skills</div>
+        <p class="skills-intro reveal">
+          Languages &amp; tools are just the medium &mdash;<br />
+          <em>great interfaces</em> are the goal.
+        </p>
+        <div class="skills-columns">
+          <div class="reveal">
+            <div class="skill-category-title">Languages</div>
+            <ul class="skill-list">
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+              <li>HTML5</li>
+              <li>CSS3 / LESS</li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <div class="skill-category-title">Frameworks &amp; Libraries</div>
+            <ul class="skill-list">
+              <li>React</li>
+              <li>Redux</li>
+              <li>React Native</li>
+              <li>jQuery</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <div class="skill-category-title">Styling &amp; Build</div>
+            <ul class="skill-list">
+              <li>TailwindCSS</li>
+              <li>Storybook</li>
+              <li>Webpack / Vite</li>
+              <li>Babel / NPM / Gulp</li>
+              <li>Jest (Unit Testing)</li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <div class="skill-category-title">Tools &amp; Workflow</div>
+            <ul class="skill-list">
+              <li>Git, GitHub, GitLab</li>
+              <li>Jira / Confluence</li>
+              <li>Bitbucket / SVN</li>
+              <li>Agile / Scrum</li>
+              <li>WCAG / Accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" aria-label="Selected Projects">
+        <div class="section-label">04 / Projects</div>
+        <div class="projects-header reveal">
+          <h2 class="projects-title">My<br />Work</h2>
+          <a
+            href="https://github.com/Saloni-Oswal"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View all projects on GitHub (opens in new tab)"
+            class="projects-link"
+            >View all on GitHub</a
+          >
+        </div>
+        <div class="projects-grid reveal">
+          <div class="project-card">
+            <div class="project-num">01</div>
+            <h3 class="project-name">Weather Application</h3>
+            <p class="project-desc">
+              A web-based tool providing real-time weather data for any location
+              worldwide. Responsive and user-friendly, driven by the
+              OpenWeatherMap API.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">Tailwind</span>
+              <span class="tag">JavaScript</span
+              ><span class="tag">Weather API</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://saloni-oswal.github.io/weather-application/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Weather Application live demo (opens in new tab)"
+                class="project-link"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">02</div>
+            <h3 class="project-name">Dice Roller</h3>
+            <p class="project-desc">
+              A dice roller application built to practice React hooks and
+              implement web accessibility principles throughout the UI.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">TypeScript</span
+              ><span class="tag">TailwindCSS</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://saloni-oswal.github.io/dice-roller/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Dice Roller live demo (opens in new tab)"
+                class="project-link"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Saloni-Oswal/dice-roller"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Dice Roller source on GitHub (opens in new tab)"
+                class="project-link"
+                >View Source</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">03</div>
+            <h3 class="project-name">Traffic Lights</h3>
+            <p class="project-desc">
+              A TypeScript project simulating traffic light sequences &mdash; a
+              deep dive into states, timers, and reusable React component
+              architecture.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">TypeScript</span
+              ><span class="tag">State Handling</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/Saloni-Oswal/traffic-lights"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Traffic Lights source on GitHub (opens in new tab)"
+                class="project-link"
+                >View Source</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">04</div>
+            <h3 class="project-name">Aarvika</h3>
+            <p class="project-desc">
+              A TypeScript-powered website showcasing modern frontend
+              architecture and component design principles with a clean, modular
+              codebase.
+            </p>
+            <div class="project-tags">
+              <span class="tag">TypeScript</span
+              ><span class="tag">Frontend</span
+              ><span class="tag">Architecture</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://saloni-oswal.github.io/aarvika/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Aarvika live demo (opens in new tab)"
+                class="project-link"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Saloni-Oswal/aarvika"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Aarvika source on GitHub (opens in new tab)"
+                class="project-link"
+                >View Source</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">05</div>
+            <h3 class="project-name">Portfolio Site</h3>
+            <p class="project-desc">
+              Previous portfolio &mdash; built in React and TailwindCSS,
+              showcasing clean component architecture and responsive design
+              craftsmanship.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">TailwindCSS</span
+              ><span class="tag">HTML</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://saloni-oswal.github.io/portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Old portfolio live demo (opens in new tab)"
+                class="project-link"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Saloni-Oswal/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Portfolio source on GitHub (opens in new tab)"
+                class="project-link"
+                >View Source</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">06</div>
+            <h3 class="project-name">CodePen Experiments</h3>
+            <p class="project-desc">
+              A playground of UI experiments, CSS animations, and interactive
+              components &mdash; exploring creative frontiers of the web
+              platform one pen at a time.
+            </p>
+            <div class="project-tags">
+              <span class="tag">CSS</span><span class="tag">Animations</span
+              ><span class="tag">Experiments</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://codepen.io/Saloni-Oswal"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="CodePen experiments (opens in new tab)"
+                class="project-link"
+                >Explore Pens</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="education-section" aria-label="Education">
+        <div class="section-label">05 / Education</div>
+        <div class="edu-grid reveal">
+          <div class="edu-card">
+            <div class="edu-degree">Master of Science</div>
+            <div class="edu-field">Computer Science</div>
+            <div class="edu-school">Fergusson College &middot; Pune, India</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-degree">Bachelor of Science</div>
+            <div class="edu-field">Computer Science</div>
+            <div class="edu-school">
+              PVG&rsquo;s College of Science &middot; Pune, India
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONNECT -->
+      <section id="connect" class="connect-section" aria-label="Contact">
+        <div class="connect-bg-text" aria-hidden="true">HELLO</div>
+        <div class="connect-label">06 / Get in Touch</div>
+        <h2 class="connect-headline reveal">
+          Let&rsquo;s build<br />something great.
+        </h2>
+        <p class="connect-sub reveal">
+          I&rsquo;m actively looking for new opportunities and always open to
+          interesting conversations. Drop me a line &mdash; I read every
+          message.
+        </p>
+        <div class="connect-links reveal">
+          <a
+            href="mailto&#58;salonioswal22&#64;gmail&#46;com"
+            class="connect-btn solid"
+            >Email Me</a
+          >
+          <a
+            href="https://www.linkedin.com/in/salonioswal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn (opens in new tab)"
+            class="connect-btn"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/Saloni-Oswal"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub (opens in new tab)"
+            class="connect-btn"
+            >GitHub</a
+          >
+          <a
+            href="https://www.instagram.com/oswalsaloni/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram (opens in new tab)"
+            class="connect-btn"
+            >Instagram</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; 2026 Saloni Oswal</span>
+      <span>Designed &amp; built with &hearts; in Jersey City, NJ</span>
+      <a
+        href="https://saloni-oswal.github.io/portfolio/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Saloni's portfolio (opens in new tab)"
+        >saloni-oswal.github.io/portfolio</a
+      >
+    </footer>
+
+    <script>
+      (function () {
+        // Custom cursor - mouse only (WCAG 2.1.1)
+        if (window.matchMedia("(pointer: fine)").matches) {
+          const cur = document.getElementById("cursor");
+          const ring = document.getElementById("cursorRing");
+          let mx = 0,
+            my = 0,
+            rx = 0,
+            ry = 0;
+          document.addEventListener("mousemove", function (e) {
+            mx = e.clientX;
+            my = e.clientY;
+          });
+          (function tick() {
+            cur.style.left = mx + "px";
+            cur.style.top = my + "px";
+            rx += (mx - rx) * 0.12;
+            ry += (my - ry) * 0.12;
+            ring.style.left = rx + "px";
+            ring.style.top = ry + "px";
+            requestAnimationFrame(tick);
+          })();
+          document.querySelectorAll("a, button").forEach(function (el) {
+            el.addEventListener("mouseenter", function () {
+              ring.style.transform = "translate(-50%,-50%) scale(1.6)";
+              ring.style.opacity = "0.8";
+            });
+            el.addEventListener("mouseleave", function () {
+              ring.style.transform = "translate(-50%,-50%) scale(1)";
+              ring.style.opacity = "0.5";
+            });
+          });
+        }
+
+        // Theme toggle
+        const html = document.documentElement;
+        const btn = document.getElementById("themeToggle");
+        const saved = localStorage.getItem("so-theme");
+        const dark =
+          saved === "dark" ||
+          (!saved && window.matchMedia("(prefers-color-scheme:dark)").matches);
+        if (dark) {
+          html.setAttribute("data-theme", "dark");
+          btn.setAttribute("aria-label", "Switch to light mode");
+        }
+
+        btn.addEventListener("click", function () {
+          const isDark = html.getAttribute("data-theme") === "dark";
+          html.setAttribute("data-theme", isDark ? "light" : "dark");
+          localStorage.setItem("so-theme", isDark ? "light" : "dark");
+          btn.setAttribute(
+            "aria-label",
+            isDark ? "Switch to dark mode" : "Switch to light mode"
+          );
+        });
+
+        // Sticky nav
+        const nav = document.getElementById("nav");
+        window.addEventListener("scroll", function () {
+          nav.classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+        // Scroll reveal
+        const obs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) e.target.classList.add("visible");
+            });
+          },
+          { threshold: 0.1 }
+        );
+        document.querySelectorAll(".reveal").forEach(function (el) {
+          obs.observe(el);
+        });
+      })();
+    </script>
+  </body>
+</html>
