@@ -183,7 +183,7 @@ nav.scrolled {
 }
 .nav-links a {
   font-family: "DM Mono", monospace;
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--warm-mid);
@@ -271,7 +271,7 @@ nav.scrolled {
   line-height: 1.7;
   color: var(--warm-mid);
   margin-bottom: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   opacity: 0;
   animation: fadeUp 0.9s ease forwards 0.6s;
 }
@@ -304,7 +304,7 @@ nav.scrolled {
   color: var(--cream);
   padding: 0.9rem 2rem;
   font-family: "DM Mono", monospace;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
@@ -319,7 +319,7 @@ nav.scrolled {
   color: var(--ink);
   padding: 0.9rem 2rem;
   font-family: "DM Mono", monospace;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
@@ -480,7 +480,7 @@ section {
 }
 .about-fun-title {
   font-family: "DM Mono", monospace;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--rust);
@@ -516,7 +516,7 @@ section {
 }
 .stat-label {
   font-family: "DM Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--warm-mid);
@@ -536,7 +536,7 @@ section {
   align-items: center;
   gap: 0.8rem;
   font-family: "DM Mono", monospace;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--warm-mid);
   text-decoration: none;
   transition: color 0.2s;
@@ -619,14 +619,14 @@ section {
 }
 .exp-company {
   font-family: "DM Mono", monospace;
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.05em;
   color: var(--warm-mid);
   margin-bottom: 1.2rem;
 }
 .exp-project {
   font-family: "DM Mono", monospace;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--rust);
@@ -694,7 +694,7 @@ section {
 }
 .skill-category-title {
   font-family: "DM Mono", monospace;
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--rust);
@@ -788,7 +788,7 @@ section {
 }
 .project-num {
   font-family: "DM Mono", monospace;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   color: var(--rust);
   margin-bottom: 1.5rem;
@@ -802,7 +802,7 @@ section {
   line-height: 1.2;
 }
 .project-desc {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.7;
   color: var(--warm-mid);
   margin-bottom: 1.5rem;
@@ -831,7 +831,7 @@ section {
 }
 .project-link {
   font-family: "DM Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--rust);
@@ -886,7 +886,7 @@ section {
   z-index: 1;
 }
 .connect-sub {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   opacity: 0.8;
   margin-bottom: 3rem;
   max-width: 580px;
@@ -910,7 +910,7 @@ section {
   color: var(--cream);
   padding: 0.9rem 2rem;
   font-family: "DM Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
@@ -1061,7 +1061,7 @@ footer a:hover {
   }
   .nav-links a,
   .hero-tag {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
   section {
     padding: 4rem 1.5rem;
