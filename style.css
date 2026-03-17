@@ -170,7 +170,7 @@ nav.scrolled {
 }
 .nav-logo {
   font-family: "Playfair Display", serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.02em;
   color: var(--ink);
   text-decoration: none;
@@ -253,7 +253,8 @@ nav.scrolled {
   animation: fadeUp 0.8s ease forwards 0.2s;
 }
 .hero-name {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Mono", monospace;
+  /* font-family: "Playfair Display", serif; */
   font-size: clamp(3.5rem, 7vw, 6rem);
   line-height: 1;
   font-weight: 700;
@@ -271,7 +272,7 @@ nav.scrolled {
   line-height: 1.7;
   color: var(--warm-mid);
   margin-bottom: 1.2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   opacity: 0;
   animation: fadeUp 0.9s ease forwards 0.6s;
 }
@@ -339,17 +340,6 @@ nav.scrolled {
   /* background: var(--skills-bg); */
   transition: background-color 0.35s ease;
 }
-.hero-pattern {
-  position: absolute;
-  inset: 0;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 40px,
-    rgba(196, 96, 42, 0.08) 40px,
-    rgba(196, 96, 42, 0.08) 41px
-  );
-}
 .hero-avatar-wrap {
   position: absolute;
   /* bottom: 0;
@@ -369,19 +359,6 @@ nav.scrolled {
   /* object-fit: cover; */
   /* object-position: top center; */
   /* filter: grayscale(30%) contrast(1.05); */
-}
-.hero-initials {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Playfair Display", serif;
-  font-size: 11rem;
-  font-weight: 700;
-  color: rgba(196, 96, 42, 0.15);
-  user-select: none;
-  letter-spacing: -0.05em;
 }
 .hero-location {
   position: absolute;
@@ -470,7 +447,7 @@ section {
   line-height: 1.8;
   color: var(--warm-mid);
   margin-bottom: 1.4rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .about-fun {
   margin-top: 2.5rem;
@@ -487,7 +464,7 @@ section {
   margin-bottom: 1rem;
 }
 .about-fun-text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: var(--warm-mid);
 }
@@ -546,7 +523,7 @@ section {
 }
 .contact-bit-icon {
   color: var(--rust);
-  font-size: 0.9rem;
+  font-size: 1rem;
   min-width: 1.2rem;
   text-align: center;
 }
@@ -604,13 +581,13 @@ section {
 }
 .exp-role {
   font-family: "Playfair Display", serif;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 .exp-date {
   font-family: "DM Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--rust);
@@ -640,7 +617,7 @@ section {
   gap: 0.5rem;
 }
 .exp-bullets li {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   color: var(--warm-mid);
   display: flex;
@@ -709,7 +686,7 @@ section {
   gap: 0.6rem;
 }
 .skill-list li {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--skills-muted);
   display: flex;
   align-items: center;
@@ -796,7 +773,7 @@ section {
 }
 .project-name {
   font-family: "Playfair Display", serif;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
   line-height: 1.2;
@@ -886,7 +863,7 @@ section {
   z-index: 1;
 }
 .connect-sub {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   opacity: 0.8;
   margin-bottom: 3rem;
   max-width: 580px;
