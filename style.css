@@ -183,7 +183,7 @@ nav.scrolled {
 }
 .nav-links a {
   font-family: "DM Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--warm-mid);
@@ -238,13 +238,13 @@ nav.scrolled {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 8rem 3rem 5rem 4rem;
+  padding: 8rem 3rem 3rem 4rem;
   position: relative;
   z-index: 2;
 }
 .hero-tag {
   font-family: "DM Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 1rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--rust);
@@ -267,11 +267,11 @@ nav.scrolled {
   color: var(--rust);
 }
 .hero-bio {
-  max-width: 450px;
+  max-width: 540px;
   line-height: 1.7;
   color: var(--warm-mid);
   margin-bottom: 1.2rem;
-  font-size: 0.98rem;
+  font-size: 1.2rem;
   opacity: 0;
   animation: fadeUp 0.9s ease forwards 0.6s;
 }
@@ -285,7 +285,7 @@ nav.scrolled {
 }
 .hero-badge {
   font-family: "DM Mono", monospace;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--rust);
@@ -304,7 +304,7 @@ nav.scrolled {
   color: var(--cream);
   padding: 0.9rem 2rem;
   font-family: "DM Mono", monospace;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
@@ -396,7 +396,7 @@ nav.scrolled {
 }
 .scroll-indicator {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 0.5rem;
   left: 4rem;
   display: flex;
   align-items: center;
@@ -432,7 +432,7 @@ section {
 }
 .section-label {
   font-family: "DM Mono", monospace;
-  font-size: 0.68rem;
+  font-size: 1rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--rust);
@@ -470,6 +470,7 @@ section {
   line-height: 1.8;
   color: var(--warm-mid);
   margin-bottom: 1.4rem;
+  font-size: 1.2rem;
 }
 .about-fun {
   margin-top: 2.5rem;
@@ -483,7 +484,7 @@ section {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--rust);
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 .about-fun-text {
   font-size: 0.92rem;
@@ -650,7 +651,7 @@ section {
   content: "--";
   color: var(--rust);
   font-family: "DM Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin-top: 0.25rem;
   flex-shrink: 0;
 }
@@ -721,7 +722,7 @@ section {
 .skill-list li::before {
   content: "--";
   color: var(--rust);
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-family: "DM Mono", monospace;
   flex-shrink: 0;
 }
@@ -841,7 +842,7 @@ section {
   transition: gap 0.2s;
 }
 .project-link:hover {
-  gap: 0.7rem;
+  gap: 1rem;
 }
 
 /* ── EDUCATION ── */
@@ -879,7 +880,7 @@ section {
 }
 .edu-field {
   font-family: "DM Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   color: var(--rust);
   margin-bottom: 0.6rem;
@@ -1057,9 +1058,6 @@ footer a:hover {
     height: 50vw;
     min-height: 280px;
   }
-  .hero-left {
-    padding: 2rem 1rem;
-  }
   section {
     padding: 5rem 2rem;
   }
@@ -1107,8 +1105,9 @@ footer a:hover {
   .nav-links {
     gap: 0.8rem;
   }
-  .nav-links a {
-    font-size: 0.62rem;
+  .nav-links a,
+  .hero-tag {
+    font-size: 0.72rem;
   }
   section {
     padding: 4rem 1.5rem;
