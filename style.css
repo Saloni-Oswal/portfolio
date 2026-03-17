@@ -183,7 +183,7 @@ nav.scrolled {
 }
 .nav-links a {
   font-family: "DM Mono", monospace;
-  font-size: 1rem;
+  font-size: 0.92rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--warm-mid);
@@ -470,7 +470,7 @@ section {
   line-height: 1.8;
   color: var(--warm-mid);
   margin-bottom: 1.4rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .about-fun {
   margin-top: 2.5rem;
@@ -694,7 +694,7 @@ section {
 }
 .skill-category-title {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.95rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--rust);
@@ -709,7 +709,7 @@ section {
   gap: 0.6rem;
 }
 .skill-list li {
-  font-size: 0.88rem;
+  font-size: 1.1rem;
   color: var(--skills-muted);
   display: flex;
   align-items: center;
@@ -788,7 +788,7 @@ section {
 }
 .project-num {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.82rem;
   letter-spacing: 0.12em;
   color: var(--rust);
   margin-bottom: 1.5rem;
@@ -802,7 +802,7 @@ section {
   line-height: 1.2;
 }
 .project-desc {
-  font-size: 0.88rem;
+  font-size: 0.98rem;
   line-height: 1.7;
   color: var(--warm-mid);
   margin-bottom: 1.5rem;
@@ -826,12 +826,12 @@ section {
 }
 .project-links {
   display: flex;
-  gap: 1rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
 }
 .project-link {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--rust);
@@ -916,7 +916,7 @@ section {
 }
 .connect-label {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 1rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(245, 240, 232, 0.9);
@@ -932,10 +932,10 @@ section {
   z-index: 1;
 }
 .connect-sub {
-  font-size: 1rem;
+  font-size: 1.2rem;
   opacity: 0.8;
   margin-bottom: 3rem;
-  max-width: 480px;
+  max-width: 580px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.7;
@@ -956,7 +956,7 @@ section {
   color: var(--cream);
   padding: 0.9rem 2rem;
   font-family: "DM Mono", monospace;
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
