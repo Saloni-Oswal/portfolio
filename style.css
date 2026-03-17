@@ -480,14 +480,14 @@ section {
 }
 .about-fun-title {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--rust);
   margin-bottom: 1rem;
 }
 .about-fun-text {
-  font-size: 0.92rem;
+  font-size: 1.1rem;
   line-height: 1.7;
   color: var(--warm-mid);
 }
@@ -516,7 +516,7 @@ section {
 }
 .stat-label {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--warm-mid);
@@ -536,7 +536,7 @@ section {
   align-items: center;
   gap: 0.8rem;
   font-family: "DM Mono", monospace;
-  font-size: 0.72rem;
+  font-size: 0.92rem;
   color: var(--warm-mid);
   text-decoration: none;
   transition: color 0.2s;
