@@ -169,7 +169,7 @@ nav.scrolled {
   border-bottom: 1px solid var(--light-border);
 }
 .nav-logo {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", serif;
   font-size: 1.2rem;
   letter-spacing: 0.02em;
   color: var(--ink);
@@ -254,7 +254,6 @@ nav.scrolled {
 }
 .hero-name {
   font-family: "DM Mono", monospace;
-  /* font-family: "Playfair Display", serif; */
   font-size: clamp(3.5rem, 7vw, 6rem);
   line-height: 1;
   font-weight: 700;
@@ -365,7 +364,7 @@ nav.scrolled {
   bottom: 2.5rem;
   right: 3rem;
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(245, 240, 232, 0.4);
@@ -397,7 +396,7 @@ nav.scrolled {
 }
 .scroll-text {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--warm-mid);
@@ -434,7 +433,7 @@ section {
   align-items: start;
 }
 .about-headline {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.15;
   font-weight: 400;
@@ -442,6 +441,8 @@ section {
 }
 .about-headline strong {
   font-weight: 700;
+  font-style: italic;
+  color: var(--rust);
 }
 .about-text {
   line-height: 1.8;
@@ -484,7 +485,7 @@ section {
   background: var(--cream);
 }
 .stat-num {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", serif;
   font-size: 3.2rem;
   font-weight: 700;
   color: var(--rust);
@@ -580,7 +581,7 @@ section {
   flex-wrap: wrap;
 }
 .exp-role {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", serif;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.2;
@@ -608,7 +609,6 @@ section {
   text-transform: uppercase;
   color: var(--rust);
   margin: 0.8rem 0;
-  opacity: 0.8;
 }
 .exp-bullets {
   list-style: none;
@@ -617,8 +617,9 @@ section {
   gap: 0.5rem;
 }
 .exp-bullets li {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.4;
+  letter-spacing: 0.02em;
   color: var(--warm-mid);
   display: flex;
   align-items: flex-start;
@@ -652,7 +653,7 @@ section {
   background: var(--rust);
 }
 .skills-intro {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", serif;
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   font-weight: 400;
   max-width: 700px;
@@ -712,14 +713,14 @@ section {
   margin-bottom: 3.5rem;
 }
 .projects-title {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   line-height: 1.1;
 }
 .projects-link {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--rust);
@@ -772,14 +773,14 @@ section {
   opacity: 0.7;
 }
 .project-name {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", serif;
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
   line-height: 1.2;
 }
 .project-desc {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: var(--warm-mid);
   margin-bottom: 1.5rem;
@@ -793,7 +794,7 @@ section {
 }
 .tag {
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink);
@@ -837,7 +838,7 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", serif;
   font-size: 18vw;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.06);
@@ -854,7 +855,7 @@ section {
   margin-bottom: 1.5rem;
 }
 .connect-headline {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 700;
   line-height: 1.05;
@@ -916,7 +917,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: background-color 0.35s ease, color 0.35s ease;
